@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nested if</title>
+</head>
+<body>
+    <center>
+        <h1>nested if</h1>
+        <h2>{%if a > b%}</h2>
+            {%if a > c%}
+                <h3>inside 1st inner if block a is higher</h3>
+            {%else%}
+                <h4>inside 1st inner else block c is higher</h4>
+            {%endif%}
+        {%else%}
+            {%if b > c%}
+                <h4>inside 2nd inner if block b is higher</h4>
+            {%else %}
+                <h5>inside 2nd inner else block c is higher</h5>
+            {%endif%}
+        {%endif%}
+    </center>
+</body>
+</html>
